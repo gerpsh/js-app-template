@@ -4,13 +4,7 @@
   "license": "BSD",
   "description": "",
   "homepage": "https://github.com/cbmi/PROJECT_NAME",
-  "keywords": [
-    "harvest",
-    "avocado",
-    "serrano",
-    "client",
-    "html5"
-  ],
+  "keywords": [],
   "author": "",
   "contributors": [],
   "repository": {
@@ -33,7 +27,6 @@
     "jshint": "^2.5.1",
     "jshint-stylish": "^0.1.5",
     "requirejs": "~2.1.14",
-    "rjs-build-analysis": "0.0.3",
     "semver-utils": "~1.1.0",
     "shelljs": "~0.2.6"
   }
