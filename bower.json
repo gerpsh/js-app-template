@@ -1,0 +1,15 @@
+{
+  "name": "PROJECT_NAME",
+  "version": "0.1.0-beta",
+  "license": "BSD",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "contributors": [],
+  "homepage": "https://github.com/cbmi/PROJECT_NAME/",
+  "repo": "cbmi/PROJECT_NAME",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cbmi/PROJECT_NAME.git"
+  }
+}
