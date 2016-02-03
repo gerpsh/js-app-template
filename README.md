@@ -1,59 +1,46 @@
-# PROJECT_LABEL
-
-## Development
-
-_Interested in contributing? Please read the CONTRIBUTING.md guide prior to sending pull requests._
-
-### Dependencies
-
-- Node + NPM
-- Ruby + Sass
+JS Starter kit: Redux Boilerplate with Todo List Example
+=====================
 
 ### Setup
 
-The template uses two variables `PROJECT_NAME` and `PROJECT_LABEL` which needs to be replaced throughout the project where `PROJECT_NAME` must be a valid JavaScript variable and `PROJECT_LABEL` is the human readable verbose name. Run the following script to replace the variables in-place.
-
-```bash
-./replace.sh "myapp" "My App"
 ```
-
-Install development dependencies for the Gruntfile:
-
-```bash
 npm install
+DEBUG=true npm start
+open http://localhost:3000
 ```
 
-Start working:
+### Dependencies
 
-```bash
-grunt work
-```
+* React
+* Webpack
+* [webpack-dev-server](https://github.com/webpack/webpack-dev-server)
+* [babel-loader](https://github.com/babel/babel-loader)
+* [react-hot-loader](https://github.com/gaearon/react-hot-loader)
 
-In another shell, start the server:
 
-```bash
-grunt serve
-```
+### Overview
+1. #### Containers
+  These are the top level components that hold state and feed the properties of
+  children components.  In this example, App is the highest level component;
+  TodoListApp is a sub-component that provides the todo list interface and its corresponding state.
 
-Go to http://localhost:8125/demo/ in your browser
+2. #### Actions/Constants
+  Actions for each app are defined in `src/actions/`.  Each container should isolate its
+  actions from other containers not above it in the component hierarchy.  Actions are referenced by a string, but
+  for convenience, this project maps each action string to a constant which is referenced
+  to execute each action
 
-### Testing
+3. #### Reducers
+  Reducers are where initial state is set and the details of each action and how it
+  modifies the state is specified.
 
-To run the tests, simply do:
+4. #### Components
+  Each non-container React component is defined here. The `index.js` file provides a
+  simple way to reference each component in other parts of the app. *Note: I'd be
+  in favor of putting each component into its own folder so referencing stylesheets is easier.
+  Let me know what you think about this.*
 
-```bash
-grunt test
-```
-
-### Distribution
-
-```bash
-grunt release
-```
-
-- Bumps the version to the final, e.g. `1.0.0-beta` to `1.0.0`
-- Tags a release
-- Freshly compiles and optimizes code
-- Creates zip and tarball binaries
-- Prints instructions to push and upload it to GitHub
-- Bumps the patch version, e.g. `1.0.0` to `1.0.1-beta`
+5. #### Store_Enhancer
+  This is boilerplate to enable redux-devtools.  Redux-devtools is what enables the
+  action/state bar on the right side of the screen and is extremely useful for observing
+  state changes and thus debugging.
