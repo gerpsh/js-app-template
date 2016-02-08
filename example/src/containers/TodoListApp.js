@@ -1,10 +1,11 @@
 import React, { Component, PropTypes } from 'react';
-import styles from './TodoListApp.css';
+import styles from './style.css';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-import * as todosActions from '../actions/todosActions';
-import { TodoList, AddTodoInput } from '../components';
+import * as todosActions from '../actions/TodosActions';
+import TodoList from '../components/TodoList/TodoList';
+import AddTodoInput from '../components/AddTodoInput/AddTodoInput';
 
 @connect(state => ({
   todolist: state.todolist

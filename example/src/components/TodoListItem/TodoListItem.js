@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import classnames from 'classnames';
-import styles from './TodoListItem.css';
+import styles from './style.css';
 
 export default class TodoListItem extends Component {
   static propTypes = {

@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import classnames from 'classnames';
-import styles from './AddtodoInput.css';
+import styles from './style.css';
 
 export default class AddTodoInput extends Component {
   static propTypes = {

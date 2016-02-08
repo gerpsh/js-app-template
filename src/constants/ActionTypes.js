@@ -1,3 +1,8 @@
-export const ADD_TODO = 'ADD_TODO';
-export const STAR_TODO = 'STAR_TODO';
-export const DELETE_TODO = 'DELETE_TODO';
+/*
+  Action types are named and exported here.
+
+  Example:
+
+  export const ADD_STATE = 'ADD_STATE';
+
+*/

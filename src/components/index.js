@@ -1,3 +1,7 @@
-export { default as AddTodoInput } from './AddTodoInput';
-export { default as TodoList } from './TodoList';
-export { default as TodoListItem } from './TodoListItem';
+/*
+  Export components here for easy use in other parts of the app:
+
+  Example:
+  export { default as SomeComponent } from './SomeComponent';
+
+*/

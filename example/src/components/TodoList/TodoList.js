@@ -1,8 +1,8 @@
 import React, { Component, PropTypes } from 'react';
 import mapValues from 'lodash/object/mapValues';
 
-import styles from './TodoList.css';
-import TodoListItem from './TodoListItem';
+import styles from './style.css';
+import TodoListItem from '../TodoListItem/TodoListItem';
 
 export default class TodoList extends Component {
   static propTypes = {
